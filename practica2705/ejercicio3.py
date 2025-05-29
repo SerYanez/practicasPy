@@ -48,6 +48,7 @@ while True:
             opcion = input("Desea ver la lista de personas? S/N")
             if opcion.lower().strip() == "s":
                 print(personas)
+                break
             elif opcion.lower().strip() == "n":
                 print("Gracias por usar el programa!")
                 break
