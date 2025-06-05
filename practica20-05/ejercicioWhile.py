@@ -1,7 +1,7 @@
 while True:
     entrada = input("Ingrese un nro entero: ")
     try:
-        nro = int(entrada)
+        nro = float(entrada)
         break
     except ValueError:
         print("Entrada inválida. Por favor, ingrese un número entero.")
