@@ -1,7 +1,6 @@
 # Implementar una función que reciba dos números y devuelva su cociente.
 def dividir(nro1, nro2):
-    total = nro1 / nro2
-    return total
+    return nro1 / nro2
 
 while True:
     try:

@@ -3,23 +3,19 @@
 # por cero.
 
 def suma(nro1, nro2):
-    total = nro1 + nro2
-    return total
+    return nro1 + nro2
 
 def resta(nro1, nro2):
-    total = nro1 - nro2
-    return total
+    return nro1 - nro2
 
 def division(nro1, nro2):
     try:
-        total = nro1 / nro2
-        return total
+        return nro1 / nro2
     except ZeroDivisionError:
         return "No se puede dividir por 0."
 
 def multiplicacion(nro1, nro2):
-    total = nro1 * nro2
-    return total
+    return nro1 * nro2
 
 while True:
     print("Operaciones disponibles:\n"
