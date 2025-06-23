@@ -1,0 +1,5 @@
+Primera línea del documento.
+Segunda línea del documento.
+Tercera línea informativa.
+Otra línea más con contenido.
+Última línea del archivo.

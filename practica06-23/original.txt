@@ -1,0 +1,3 @@
+Python es un lenguaje de programación versátil y fácil de aprender.
+Este archivo contiene un texto simple para convertir a mayúsculas.
+Practicar con archivos fortalece tus habilidades en programación.

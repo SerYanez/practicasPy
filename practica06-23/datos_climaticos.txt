@@ -1,0 +1,4 @@
+fecha,temperatura_max,temperatura_min,precipitacion
+2024-06-10,18.5,10.2,0.0
+2024-06-11,21.0,12.3,3.5
+2024-06-12,19.8,11.1,0.0
