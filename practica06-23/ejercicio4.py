@@ -6,15 +6,16 @@
 def modif(file, nuevo_archivo):
     with open(file, "r") as archivo:
         lineas = archivo.readlines()
-    with open(nuevo_archivo, "w") as nuevo:
-        for i in lineas:
-            linea = i.replace(".", ",")
-            nuevo.write(linea)
+    try:
+        with open(nuevo_archivo, "x") as nuevo:
+            for i in lineas:
+                linea = i.replace(".", ",")
+                nuevo.write(linea)
+            return nuevo.read()
+    except FileExistsError:
+        return "El archivo modificado ya existe."
 
 with open("mediciones.txt", "r") as archivo:
     print(archivo.read())
 
-modif("mediciones.txt", "mediciones_modificadas.txt")
-
-with open("mediciones_modificadas.txt", "r") as archivo:
-    print(archivo.read())
+print(modif("mediciones.txt", "mediciones_modificadas.txt"))
