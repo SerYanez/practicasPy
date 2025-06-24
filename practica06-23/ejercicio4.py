@@ -4,16 +4,19 @@
 # previamente si el archivo existe.
 
 def modif(file, nuevo_archivo):
-    with open(file, "r") as archivo:
-        lineas = archivo.readlines()
     try:
-        with open(nuevo_archivo, "x") as nuevo:
-            for i in lineas:
-                linea = i.replace(".", ",")
-                nuevo.write(linea)
-            return nuevo.read()
-    except FileExistsError:
-        return "El archivo modificado ya existe."
+        with open(file, "r") as archivo:
+            lineas = archivo.readlines()
+        try:
+            with open(nuevo_archivo, "x") as nuevo:
+                for i in lineas:
+                    linea = i.replace(".", ",")
+                    nuevo.write(linea)
+                return nuevo.read()
+        except FileExistsError:
+            return "El archivo modificado ya existe."
+    except FileNotFoundError:
+        return f"El archivo {file} no existe."
 
 with open("mediciones.txt", "r") as archivo:
     print(archivo.read())
