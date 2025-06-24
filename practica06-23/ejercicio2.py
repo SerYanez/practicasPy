@@ -3,8 +3,11 @@
 # escribiendo cada valor en una línea separada.
 
 def almacenar_datos(archivo):
-    datos = {"nombre": input("Ingrese su nombre: "), "edad": input("Ingrese su edad: "),
-             "ciudad": input("Ingrese el nombre de la ciudad donde reside: ")}
+    nombre = input("Ingrese su nombre: ")
+    edad = input("Ingrese su edad: ")
+    ciudad = input("Ingrese el nombre de la ciudad donde reside: ")
+    datos = {"Nombre": nombre, "Edad": edad,
+             "Ciudad": ciudad}
     with open("usuario.txt", "w") as archivo:
         for clave, valor in datos.items():
             archivo.write(f"{clave}: {valor} \n")
